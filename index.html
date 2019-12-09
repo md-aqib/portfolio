@@ -49,6 +49,14 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<script src="https://kit.fontawesome.com/52d6b9c70f.js" crossorigin="anonymous"></script>
+	<style>
+		@media screen and (max-width: 750px) {
+  			.column {
+				width: 100%;
+				font-size: 20px;
+				  }
+			}
+	</style>
 	</head>
 	<body>
 	<div id="colorlib-page">
@@ -58,7 +66,7 @@
 			<div class="text-center">
 				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
 				<h1 id="colorlib-logo"><a href="index.html">Mohd Aqib</a></h1>
-				<span class="position"><a href="#">Full Stack Developer</a></span>
+				<span class="position"><a href="#" style="color: brown; font-weight: bold;">Full Stack Developer</a></span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
@@ -78,13 +86,14 @@
 
 			<div class="colorlib-footer">
 				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart" aria-hidden="true"></i> by <a>aqib.ml</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart" aria-hidden="true"></i> by <a style="color: brown;">aqib.ml</a>
 </span</small></p>
 				<ul>
-					<li><a href="#"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+					<li><a href="https://github.com/md-aqib" target="_blank"><i class="fab fa-github" style="color: black; font-size: 25px;"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/mohd-aqib-9630ba14b/" target="_blank"><i class="fab fa-linkedin" style="color: #0e76a8; font-size: 25px;"></i></a></li>
+					<li><a href="https://www.instagram.com/iamaquibmax/" target="_blank"><i class="fab fa-instagram" style="color: #C13584; font-size: 25px;"></i></a></li>
+					<li><a href="https://twitter.com/iamaquibmax" target="_blank"><i class="fab fa-twitter-square" style="color: #00acee; font-size: 25px;"></i></a></li>
+					<li><a href="https://www.facebook.com/md.max2" target="_blank"><i class="fab fa-facebook" style="color: #3b5998; font-size: 25px;"></i></a></li>
 				</ul>
 			</div>
 
@@ -103,7 +112,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					   					<div class="desc">
 						   					<h1>Hi! <br>I'm Aqib</h1>
 						   					<!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
-												<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+												<p><a class="btn btn-primary btn-learn" onclick="scrollWin()">View Portfolio <i class="fas fa-arrow-down"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -117,9 +126,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 					   				<div class="slider-text-inner">
 					   					<div class="desc">
-						   					<h1>I am <br>a Developer</h1>
+						   					<h1>I <br>am a <br>Developer</h1>
 												<!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
-												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+												<p><a class="btn btn-primary btn-learn" onclick="scrollWin()">View Portfolio <i class="fas fa-arrow-down"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -147,17 +156,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 
 							<div class="row">
-								<div class="col-md-3">
-									<a href="https://github.com/md-aqib" target="_blank"><h3><i class="fab fa-github"></i> Github</h3></a>
+								<div class="col-xs-12">
+								<div class="col-xs-2 column">
+									<a href="https://github.com/md-aqib" target="_blank"><i class="fab fa-github" style="color: black; font-size: 4vw;"></i></a>
 								</div>
-								<div class="col-md-3">
-										<a href="https://www.linkedin.com/in/mohd-aqib-9630ba14b/" target="_blank"><h3><i class="fab fa-linkedin" style="color: #0e76a8;"></i> LinkedIn</h3></a>
+								<div class="col-xs-2 column">
+										<a href="https://www.linkedin.com/in/mohd-aqib-9630ba14b/" target="_blank"><i class="fab fa-linkedin" style="color: #0e76a8; font-size: 4vw;"></i></a>
 									  </div>
-								<div class="col-md-3">
-								  <a href="https://www.instagram.com/iamaquibmax/" target="_blank"><h3><i class="fab fa-instagram" style="color: #C13584;"></i> Instagram</h3></a>
+								<div class="col-xs-2 column">
+								  <a href="https://www.instagram.com/iamaquibmax/" target="_blank"><i class="fab fa-instagram" style="color: #C13584; font-size: 4vw;"></i></a>
 								</div>
-								<div class="col-md-3">
-								  <a href="https://www.facebook.com/md.max2" target="_blank"><h3><i class="fab fa-facebook" style="color: #3b5998;"></i> Facebook</h3></a>
+								<div class="col-xs-2 column">
+									<a href="https://twitter.com/iamaquibmax" target="_blank"><i class="fab fa-twitter-square" style="color: #00acee; font-size: 4vw;"></i></a>
+								</div>
+								<div class="col-xs-2 column">
+								  <a href="https://www.facebook.com/md.max2" target="_blank"><i class="fab fa-facebook" style="color: #3b5998; font-size: 4vw;"></i></a>
+								</div>
 								</div>
 							  </div>
 
@@ -300,7 +314,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<span class="colorlib-counter-label">Clients</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="0" data-speed="5000" data-refresh-interval="50"></span>
 							<span class="colorlib-counter-label">Partners</span>
 						</div>
 					</div>
@@ -430,10 +444,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									    </div>
 									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 									        <div class="panel-body">
-									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									            <p>I've done B.Tech in <strong>Civil Engineering</strong> with <strong>Honors</strong>, from Skyline Institute of Engineering and Technology, Greater Noida, UP.</p>
 													<ul>
-														<li>Separated they live in Bookmarksgrove right</li>
-														<li>Separated they live in Bookmarksgrove right</li>
+														<li>Aggregate Percentage: <strong>78.7%</strong></li>
 													</ul>
 									        </div>
 									    </div>
@@ -475,7 +488,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									    </div>
 									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 									        <div class="panel-body">
-									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
+												<p>I've done my Schooling from <strong>SRPD </strong>Intermediate College, Allahabad.</p>
+												<ul>
+													<li>10th Percentage: <strong>74.44%</strong></li>
+													<li>12th Percentage: <strong>77.8%</strong></li>
+												</ul>
 									        </div>
 									    </div>
 									</div>
@@ -505,8 +522,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					               </div>
 
 					               <div class="timeline-label">
-					                  <h2><a href="#">Full Stack Developer</a> <span>2019-2020</span></h2>
-					                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+					                  <h2><a href="#">Full Stack Developer</a> <span>June/2019-Now</span></h2>
+					                  <p>Full Stack JavaScript Developer, Currently working in Zenways.io, Working on: Node.js, Express.js, mongoDB, Bootstrap, HTML, CSS, SASS, jQuery etc.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -554,8 +571,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Site Engineer</a> <span>2018-2019</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               	<h2><a href="#">Site Engineer</a> <span>June/2018-May/2019</span></h2>
+					                  <p>Worked on planning, co-ordination and supervision of technical aspects of construction projects, including solving technical issues, providing advice, management and preparing reports etc.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -745,16 +762,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="col-md-5">
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
+										<i class="far fa-envelope"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="#">mdaquib327@gmail.com</a></p>
+									<p><a href="mailto:mdaquib327@gmail.com">mdaquib327@gmail.com</a></p>
 								</div>
 							</div>
 
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="colorlib-icon">
-									<i class="icon-map"></i>
+										<i class="fas fa-map-signs"></i>
 								</div>
 								<div class="colorlib-text">
 									<p>417-18, JMD megapolis, Sectoe 48, Gurugram</p>
@@ -763,14 +780,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
+										<i class="fas fa-phone"></i>
 								</div>
 								<div class="colorlib-text">
 									<p><a href="tel://">+91 8601942535</a></p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-7 col-md-push-1">
+						<!-- <div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
 									<form action="">
@@ -793,7 +810,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								</div>
 								
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
@@ -801,6 +818,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div><!-- end:colorlib-main -->
 	</div><!-- end:container-wrap -->
 	</div><!-- end:colorlib-page -->
+ 
+	<script>
+			function scrollWin() {
+			  window.scrollTo(0, 800);
+			}
+	</script>
+
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
